@@ -1,4 +1,3 @@
-import { css } from '../../';
 import React, { Component } from 'react';
 
 class Searchbar extends Component {
@@ -17,8 +16,6 @@ class Searchbar extends Component {
   };
 
   render() {
-    const { onSubmit } = this.props;
-
     return (
       <header className="Searchbar">
         <form onSubmit={this.onFormSubmit} className="SearchForm">
