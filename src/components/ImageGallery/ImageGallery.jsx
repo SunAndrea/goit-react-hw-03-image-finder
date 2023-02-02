@@ -1,4 +1,6 @@
 import { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import ImageGalleryItem from './ImageGalleryItem';
 
 class ImageGallery extends Component {
@@ -25,5 +27,9 @@ class ImageGallery extends Component {
     );
   }
 }
+
+ImageGallery.propTypes = {
+  images: PropTypes.array.isRequired,
+};
 
 export default ImageGallery;
