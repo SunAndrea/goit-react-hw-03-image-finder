@@ -15,7 +15,6 @@ class Modal extends Component {
 
   handleKeyDown = evt => {
     if (evt.code === 'Escape') {
-      console.log(` нажав Esc`);
       this.props.onClose();
     }
   };
